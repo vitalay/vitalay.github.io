@@ -5,6 +5,9 @@
 		<meta charset="utf-8">
 		<title>Vit</title>
 		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://angularlight.org/bin/alight_0.8.3.min.js"></script>
 	</head>
 
   <body>
@@ -30,7 +33,58 @@
         <h1>Marketing stuff!</h1>
         <p class="lead">Cras justo odio, ПРивет ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
         <p><a class="btn btn-lg btn-success" href="w1.html" role="button">Get started today</a></p>
+          
+        <div al-app>
+            <label>Name:</label>
+            <input type="text" al-value="name" />
+            <h3>Hello {{name}}!</h3>
+        </div>
+
       </div>
+
+<div al-app="todoCtrl" class="well">
+    <h3>ToDo</h3>
+
+    <form class="form-inline" al-submit="append()">
+        <input al-value="title" class="input-medium" type="text"/>
+        <input class="btn" type="submit" value="Append" />
+    </form>
+
+    <ul>
+        <li al-repeat="item in list">
+            <input type="checkbox" al-checked="item.done" />
+            <span al-css="done:item.done">{{item.title}}</span>
+            <a href al-click="remove(item)">remove</a>
+        </li>
+    </ul>
+
+    <p>Total: {{total()}} / {{list.length}}</p>
+</div>
+
+<script type="text/javascript">
+alight.controllers.todoCtrl = function($scope) {
+    $scope.list = [
+        { title: 'first', done: true },
+        { title: 'second', done: false }];
+
+    $scope.append = function() {
+        $scope.list.push({ title: $scope.title, done: false });
+        $scope.title = '';
+    };
+    $scope.remove = function(item) {
+        var i = $scope.list.indexOf(item);
+        $scope.list.splice(i, 1);
+    };
+
+    $scope.total = function() {
+        var total = 0;
+        $.each($scope.list, function(_, item) {
+            if(!item.done) total += 1
+        });
+        return total;
+    };
+};
+</script>
 
       <!-- Example row of columns -->
       <div class="row">
@@ -58,7 +112,5 @@
       </footer>
 
     </div> <!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  		<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
    </body>
 </html>
