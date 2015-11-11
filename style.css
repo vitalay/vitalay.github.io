@@ -4,7 +4,7 @@
 }
 
 ul{
-	list-style:  none;
+	list-style: none;
 }
 
 a{
@@ -14,6 +14,6 @@ a{
 body{
 
 	background: url(img/bg-body.pmg) no-repeat 50$ 0 #0e0e0e;
-	font:12px/1.67 arial, helvetica, sans-serif;
+	font:12px/1.67 Arial, Helvetica, sans-serif;
 	padding: 40px 0;
 }
