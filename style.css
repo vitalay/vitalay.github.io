@@ -17,3 +17,33 @@ body{
 	font:12px/1.67 Arial, Helvetica, sans-serif;
 	padding: 40px 0;
 }
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+/*header begin*/
+header{
+	background: #fff;
+	height: 97px;
+	-o-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+	-webkid-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
+}
+
+header h1{
+	float: left;
+	margin: 30px 0 0 40px
+}
+.tel{
+	background: url(img/bgtel.png) repeat-x 0 0;
+	padding: 3px 27px 3px 95px;
+	font-size:  18px;
+	font-weight: bold;
+	color: #c0c0c0;
+	float: right;
+
+}
+/*header end*/
