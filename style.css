@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	 padding: 0; 
+}
+
+ul{
+	list-style:  none;
+}
+
+a{
+		text-decoration: none;
+	}
+
+body{
+
+	background: url(img/bg-body.pmg) no-repeat 50$ 0 #0e0e0e;
+	font:12px/1.67 arial, helvetica, sans-serif;
+	padding: 40px 0;
+}
