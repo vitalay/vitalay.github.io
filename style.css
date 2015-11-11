@@ -1,6 +1,6 @@
 *{
 	margin: 0;
-	 padding: 0; 
+	padding: 0; 
 }
 
 ul{
@@ -13,7 +13,7 @@ a{
 
 body{
 
-	background: url(img/bg-body.pmg) no-repeat 50$ 0 #0e0e0e;
+	background: url(img/bgbody.png) no-repeat 50% 0 #0e0e0e;
 	font:12px/1.67 Arial, Helvetica, sans-serif;
 	padding: 40px 0;
 }
