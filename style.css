@@ -27,10 +27,10 @@ body{
 header{
 	background: #fff;
 	height: 97px;
-	-o-border-radius: 5px 7px 0 0;
-	-moz-border-radius: 5px 7px 0 0;
-	-webkid-border-radius: 5px 7px 0 0;
-	border-radius: 5px 7px 0 0;
+	-o-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+	-webkid-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
 }
 
 header h1{
@@ -62,7 +62,7 @@ nav li a{
 }
 
 nav li a:hover{
-background: url(img/bg-li-current.gif) repeat-x 0 0;
+  background: url(img/bg-li-current.gif) repeat-x 0 0;
 	color: #fff;
 	border-radius: 4px;
 }
@@ -70,7 +70,6 @@ background: url(img/bg-li-current.gif) repeat-x 0 0;
 
 nav li.current a{
 	background: url(img/bg-li-current.gif) repeat-x 0 0;
-	
 	color: #fff;
 	border: 1px solid #00224b;
 	border-radius: 4px;
@@ -93,11 +92,20 @@ nav li.current a{
 
 .slider-block{
 	background: url(img/bg-slider-block.png) no-repeat 0 0;
-	height: 336px;
+	height: 251px;
 	padding: 85px 50px 0; 
 	color: #fff;
 	font-size: 29px;
 	font-family: Treb;
+  line-height: 34px;
+}
+
+.fs35{
+    font-size: 35px;
+    font-style: bold;
+    text-transform: uppercase;
+    margin: 10px 0 35px;
+    letter-spacing: -2px;
 
 }
 /*блок слайдера*/
@@ -145,7 +153,7 @@ nav li.current a{
   text-decoration: none;
   display: block;
   width: 30px;
-  height: 30px;
+  height: 40px;
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
@@ -307,4 +315,57 @@ nav li.current a{
     right: 10px;
   }
 }
-/*конец слайдера*/
+/*конец слайдера*//*конец слайдера*/
+.started{
+  background: url(img/r.png) no-repeat 95% 60%,url(img/bg-started.gif) repeat-x 0 0;
+  font-size: 20px;
+  color: #b90016;
+  text-transform: uppercase;
+  padding: 17px 50px 11px 25px;
+  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+
+}
+
+/*часы кашелек*/
+
+
+
+.blurbs{
+  background: #ededed;
+  padding: 35px 0 22px 50px;
+  border-bottom: 1px solid #cecece;
+}
+.blurbs li{
+  float: left;
+  padding: 12px 0 12px 90px;
+  width: 150px;
+  margin-right: 74px
+}
+.blurbs li:last-child{
+  margin-right: 0;
+}
+
+.blurbs h3{
+  font-size: 15px;
+  color: #575757;
+}
+.blurbs li.maney{
+  background: url(img/maney.png) no-repeat 0 50%
+}
+.blurbs li.clok{
+  background: url(img/clok.png) no-repeat 0 50%
+}
+.blurbs li.contakt{
+  background: url(img/contakt.png) no-repeat 0 50%
+}
+.blurbs:after{
+  content:""; 
+  display:table;
+  clear:both;
+}
+
+/*часы кашелек*/
