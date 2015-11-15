@@ -434,7 +434,103 @@ border-bottom: none;
 /*средний блoк с картинками*/
 
 
-.middle-block:after,.blurbs:after{
+
+
+/*нижнея часть*/
+footer{
+  background:url(img/bg-top-footer.png) repeat-x #ededed;
+  -o-border-radius: 0 0 6px 6px;
+  -maz-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+}
+
+.top-footer{
+  padding: 25px 0 10px 41px;
+  border-bottom: 1px solid #ccc;
+}
+
+.top-footer > li{
+  float: left;
+}
+
+.top-footer h3{
+  font-size: 15px;
+  font-weight: bold;
+  color: #585858;
+  margin-bottom: 30px;
+}
+
+.Browse-site{
+  width: 120px;
+}
+
+.Browse-site a{
+  color: #4f4f4f;
+}
+
+.our-test{
+  width: 315px;
+  margin: 0 60px 0 115px;
+}
+
+.our-test .bold{
+  color: #000;
+  font-weight: bold;
+}
+
+.our-blog{
+  width: 280px;
+  line-height: 15px;
+}
+
+.our-blog .blue{
+  color: #0f4db6;
+  font-weight: bold;
+}
+
+.date{
+  margin-top: 16px;
+}
+
+.bottom-footer{
+  padding: 25px 41px 26px;
+  border-top: 1px solid #fff;
+}
+.bottom-footer .logo{
+  float: right;
+}
+
+.social{
+  float: right;
+  margin-right: 73px;
+}
+
+.social li{
+  float: left;
+  margin-right: 15px;
+}
+
+.social a{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(img/sprites.png) no-repeat 0 0;
+}
+
+.social a.in{
+  background-position: -18px 0;
+}
+
+.social a.f{
+  background-position: -38px 0;
+}
+/*нижнея часть*/
+
+
+.middle-block:after,
+.blurbs:after,
+.top-footer:after{
   content:""; 
   display:table;
   clear:both;
