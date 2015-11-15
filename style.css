@@ -39,7 +39,7 @@ header h1{
 }
 .tel{
 	background: url(img/bgtel.png) repeat-x 0 0;
-	padding: 3px 27px 3px 90px;
+	padding: 3px 3px 3px 90px;
 	font-size:  18px;
 	font-weight: bold;
 	color: #c0c0c0;
@@ -51,7 +51,7 @@ nav{
 }
 nav li{
 	float: right;
-	margin: 20px 30px 0 5px;
+	margin: 20px 15px 0 5px;
 
 }
 nav li a{
@@ -430,6 +430,10 @@ border-bottom: none;
 .design a{
   color: #0f4db6;
 }
+
+/*средний блoк с картинками*/
+
+
 .middle-block:after,.blurbs:after{
   content:""; 
   display:table;
